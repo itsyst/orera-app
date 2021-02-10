@@ -1,0 +1,48 @@
+{
+  "users":{
+    "v1fqxdJ1hiZ26KjuMaBVpf5b0dZ2":{
+      "name":"Ruddy Jedrzej",
+      "email":"ruddy.jedrzej@orera.com",
+      "isActive":true,
+      "image": "https://cdn.quasar.dev/img/avatar1.jpg"
+    },
+    "v2fqxdJ1hfZ26KjuBsBVpf5b0d22":{
+      "name":"Mallorie Alessandrini",
+      "email":"mallorie.alessandrini@orera.com",
+      "isActive":false,
+      "image": "https://cdn.quasar.dev/img/avatar2.jpg"
+    },
+    "v3fqxdJ1hjZ33KjuMaBVpf5b0dZ1":{
+      "name":"Elisabetta Wicklen",
+      "email":"elisabetta.wicklen@orera.com",
+      "isActive":true,
+      "image": "https://cdn.quasar.dev/img/avatar3.jpg"
+    }
+  },
+  "chats":{
+    "v1fqxdJ1hiZ26KjuMaBVpf5b0dZ2":{
+      "v3fqxdJ1hjZ33KjuMaBVpf5b0dZ1":{
+        "MessageId1":{
+          "text":"I'll be in your neighborhood doing errands this weekend. Do you want to grab brunch?",
+          "from":"them"
+        },
+        "MessageId2":{
+          "text":"Good thanks, how are you?",
+          "from":"me"
+        }
+      }
+    },
+    "v3fqxdJ1hjZ33KjuMaBVpf5b0dZ1":{
+      "v1fqxdJ1hiZ26KjuMaBVpf5b0dZ2":{
+        "MessageId1":{
+          "text":"Hi! how are you?",
+          "from":"me"
+        },
+        "MessageId2":{
+          "text":"Good thanks, how are you?",
+          "from":"them"
+        }
+      }
+    }
+  }
+}
