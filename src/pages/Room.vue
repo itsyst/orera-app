@@ -165,11 +165,10 @@ export default {
   },
   mounted() {
     this.startCamera();
-
     peerConnection.onicecandidate = event =>
       event.candidate
         ? this.sendMessage(roomId, JSON.stringify({ ice: event.candidate }))
-        : console.log("Success");
+        : console.log("Success"); // Seperat funktion och error på banner
 
     peerConnection.ontrack = ({ track, streams }) => {
       // once media for a remote track arrives, show it in the remote video element
