@@ -1,44 +1,41 @@
 <template>
-  <q-page class="fit">
-      <div class="row justify-center items-center ">
-        <img
-          src="../assets/desktop-orera.png"
-          class="desktop absolute-left col-6 q-pa-xl desktop-only orientation-landscape"
-        />
-        <img
-          src="../assets/logo.png"
-          class="logo"
-        />
-        <img
-          src="../assets/mobile-orera.png"
-          class="mobile col absolute-right q-pa-xl desktop-only orientation-landscape		"
-        />
-      </div>
-      <q-item>
-        <q-item-section class="container column items-center q-pa-lg z-top ">
-          <p class="text-bold text-center">
-            Curious? Just ask! try it for free.
-          </p>
-          <q-btn
-            to="/auth/register"
-            color="primary"
-            type="submit"
-            class="q-mb-md"
-          >
-            Sign up
-          </q-btn>
-          <q-btn to="/auth/login" color="grey" type="submit">
-            Sign in
-          </q-btn>
-        </q-item-section>
-        <div
-          class="platforms row justify-center items-center absolute-center desktop-only  orientation-landscape	"
+  <q-page class="fit q-pb-xs">
+    <div class="row justify-center items-center ">
+      <img
+        src="../assets/desktop-orera.png"
+        class="desktop absolute-left col-6 q-pa-xl desktop-only orientation-landscape"
+      />
+      <img src="../assets/logo.png" class="logo" />
+      <img
+        src="../assets/mobile-orera.png"
+        class="mobile col absolute-right q-pa-xl desktop-only orientation-landscape		"
+      />
+    </div>
+    <q-item>
+      <q-item-section class="container column items-center q-pa-lg z-top ">
+        <p class="text-bold text-center">
+          Curious? Just ask! try it for free.
+        </p>
+        <q-btn
+          to="/auth/register"
+          color="primary"
+          type="submit"
+          class="q-mb-md"
         >
-          <img src="../assets/app-store.png" class="apple col-4 q-pa-md" />
-          <img src="../assets/google-app.png" class="android col-4 q-pa-md" />
-          <img src="../assets/electron.png" class="electron col-4 q-pa-md" />
-        </div>
-      </q-item>
+          Sign up
+        </q-btn>
+        <q-btn to="/auth/login" color="grey" type="submit">
+          Sign in
+        </q-btn>
+      </q-item-section>
+      <div
+        class="platforms row justify-center items-center absolute-center desktop-only orientation-landscape	"
+      >
+        <img src="../assets/app-store.png" class="apple col-4 q-pa-md" />
+        <img src="../assets/google-app.png" class="android col-4 q-pa-md" />
+        <img src="../assets/electron.png" class="electron col-4 q-pa-md" />
+      </div>
+    </q-item>
     <q-footer class=" column justify-center text-center q-pt-md">
       <div class="row justify-center">
         <q-item-section
@@ -169,16 +166,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.q-page{
+.q-page {
   overflow: hidden;
   @media (max-height: $breakpoint-xs-max) {
-    overflow:inherit;
+    overflow: inherit;
   }
 }
 .mobile,
 .desktop {
-  height: 100%;
-  margin: 0 80px;
+  height: 70vh;
+  margin: 0 .3rem;
 }
 .logo {
   margin: auto;
@@ -189,21 +186,21 @@ export default {
   }
 
   @media (max-width: $breakpoint-xs-max) {
-      height: 25vh;
+    height: 25vh;
   }
 }
 .container {
   margin-top: -2rem;
 }
 .platforms {
-  top: 70vh;
+  top: 38vh;
 }
 .q-footer {
   margin: 10px auto 0;
   background-color: white;
   color: $primary;
 
-  @media (max-height: $breakpoint-xs-max) and (orientation : landscape){
+  @media (max-height: $breakpoint-xs-max) and (orientation: landscape) {
     position: absolute;
     bottom: auto;
     top: 70vh;
